@@ -8,6 +8,7 @@ import { fab } from '@fortawesome/free-brands-svg-icons'
 library.add(fas, far, fab)
 import './App.css'
 import SearchBar from './ui/SearchBar'
+import SocialMetrics from './ui/SocialMetrics'
 
 function App() {
 
@@ -15,8 +16,9 @@ function App() {
   return (
     <>
       <p>hello world</p>
-      <SearchBar/>
-      
+      <SearchBar />
+      <SocialMetrics />
+
     </>
   )
 }

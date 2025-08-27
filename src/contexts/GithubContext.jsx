@@ -4,6 +4,7 @@ const githubContext = createContext()
 
 function GithubProvider({ children }) {
     const [query, setQuery] = useState("github")
+    const [userData, setUserData] = useState({})
     function handleQuery(e) {
         setQuery(e.target.value)
     }
@@ -15,6 +16,7 @@ function GithubProvider({ children }) {
                 if (!response.ok) throw new Error("failed to fetch")
                 const data = await response.json()
                 console.log(data);
+                setUserData(data)
 
             } catch (error) {
                 console.error("failed to fecth data", error);
@@ -24,7 +26,7 @@ function GithubProvider({ children }) {
         fetchData()
     }, [query])
     return (
-        <githubContext.Provider value={{ handleQuery, query }}>{children}</githubContext.Provider>
+        <githubContext.Provider value={{ handleQuery, query, userData }}>{children}</githubContext.Provider>
     )
 }
 
