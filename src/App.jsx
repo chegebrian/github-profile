@@ -11,17 +11,21 @@ import SearchBar from './ui/SearchBar'
 import SocialMetrics from './ui/SocialMetrics'
 import Bio from './ui/Bio'
 import RepoCard from './component/RepoCard'
+import { BrowserRouter } from 'react-router'
 
 function App() {
 
 
   return (
     <>
-      <p>hello world</p>
-      <SearchBar />
-      <SocialMetrics />
-      <Bio />
-      <RepoCard />
+      <BrowserRouter>
+
+        <p>hello world</p>
+        <SearchBar />
+        <SocialMetrics />
+        <Bio />
+        <RepoCard />
+      </BrowserRouter>
 
     </>
   )
