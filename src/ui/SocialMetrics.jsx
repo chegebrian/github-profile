@@ -7,7 +7,7 @@ function SocialMetrics() {
     const {avatar_url:image, followers, following, location} = userData
     return (
         <section className='flex items-center gap-4'>
-            <img src={image} alt="user-avatar" className='object-cover w-20 rounded-md'/>
+            <img src={image} alt="user-avatar" className='object-cover w-20 rounded-lg'/>
             <div className='flex items-center gap-4'>
                 <div className='flex items-center gap-4 bg-[#111729] text-[#CDD5E0] px-4 py-2 rounded-lg divide-x'>
                     <span className='capitalize pr-4'>followers</span>

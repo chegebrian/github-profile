@@ -9,6 +9,8 @@ library.add(fas, far, fab)
 import './App.css'
 import SearchBar from './ui/SearchBar'
 import SocialMetrics from './ui/SocialMetrics'
+import Bio from './ui/Bio'
+import RepoCard from './component/RepoCard'
 
 function App() {
 
@@ -18,6 +20,8 @@ function App() {
       <p>hello world</p>
       <SearchBar />
       <SocialMetrics />
+      <Bio />
+      <RepoCard />
 
     </>
   )
