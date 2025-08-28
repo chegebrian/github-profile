@@ -14,9 +14,9 @@ function RepoCard({ repo }) {
             <h3 className='text-[#CDD5E0] font-semibold text-lg'>{name}</h3>
             <p className='text-[#97A3B6]'>{description}</p>
             <div className='flex sm:items-center items-start sm:flex-row flex-col gap-4 text-[#97A3B6]'>
-                {license && <div className='flex items-center gap-1'><img src="/public/images/Chield_alt.svg" alt="shield-logo" /> <span className='uppercase'>{license.key}</span></div>}
-                {forks && <div className='flex items-center gap-1'><img src="/public/images/Nesting.svg" alt="nesting-logo" /><span>{forks}</span></div>}
-                {watchers && <div className='flex items-center gap-1'><img src="/public/images/Star.svg" alt="star-logo" /><span>{watchers}</span></div>}
+                {license && <div className='flex items-center gap-1'><img src="/images/Chield_alt.svg" alt="shield-logo" /> <span className='uppercase'>{license.key}</span></div>}
+                {forks && <div className='flex items-center gap-1'><img src="/images/Nesting.svg" alt="nesting-logo" /><span>{forks}</span></div>}
+                {watchers && <div className='flex items-center gap-1'><img src="/images/Star.svg" alt="star-logo" /><span>{watchers}</span></div>}
                 <span>Last updated at {formatDate}</span>
             </div>
         </NavLink>
